@@ -92,5 +92,5 @@ export class AppComponent implements OnInit {
       .then((resp) => (this.dataSource = resp))
       .catch((err) => console.log(err));
   }
-  displayedColumns: string[] = ['id', 'name', 'cell', 'email', 'picture'];
+  displayedColumns: string[] = ['picture', 'id', 'name', 'cell', 'email'];
 }
