@@ -86,7 +86,7 @@ async function getPeople() {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  dataSource: any;
+  dataSource!: People[];
   ngOnInit() {
     getPeople()
       .then((resp) => (this.dataSource = resp))
